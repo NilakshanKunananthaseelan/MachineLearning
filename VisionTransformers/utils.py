@@ -45,7 +45,7 @@ class LayerNorm(nn.Module):
 
 	def forward(self,x,**kwargs):
 		x = self.layer_norm(x)
-		x = self.fn(x,**kwargs)
+		x = self.function(x,**kwargs)
 
 		return x
 
@@ -57,7 +57,7 @@ class ResidualConnect(nn.Module):
 		super().__init__()
 		self.function = function
 
-	def forward(x,**kwargs):
+	def forward(self,x,**kwargs):
 		x = self.function(x,**kwargs)+x
 		return x
 
