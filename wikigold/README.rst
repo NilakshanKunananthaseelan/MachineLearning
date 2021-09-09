@@ -36,4 +36,4 @@ License
 wikigold.conll.txt is licensed under CC-BY 4.0. To view this license, visit
 https://creativecommons.org/licenses/by/4.0/
 
-
+Files obtained from : https://github.com/juand-r/entity-recognition-datasets
